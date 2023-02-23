@@ -1,8 +1,8 @@
 import React from 'react'
 
-function Testimonials() {
+const Testimonials = () => {
   return (
-    <div className="text-blue-500">Testimonials</div>
+    <section className='h-screen' id='testimonials'>Testimonials</section>
   )
 }
 

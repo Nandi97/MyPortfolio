@@ -1,0 +1,6 @@
+.header__socials::after{
+    content: '';
+    width: 2px;
+    height: 2rem;
+    background: #6ECCAF;
+}

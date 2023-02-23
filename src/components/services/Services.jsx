@@ -1,8 +1,8 @@
 import React from 'react'
 
-function Services() {
+const Services = () => {
   return (
-    <div>Services</div>
+    <section className='h-screen' id='services'>Services</section>
   )
 }
 
