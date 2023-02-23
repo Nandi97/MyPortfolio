@@ -1,6 +1,6 @@
-.header__socials::after{
+.header__socials::after {
     content: '';
     width: 2px;
     height: 2rem;
-    background: #6ECCAF;
+    background: #6eccaf;
 }
