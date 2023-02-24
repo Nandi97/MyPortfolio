@@ -14,7 +14,7 @@ const Header = () => {
                 <CTA />
                 <HeaderSocials />
 
-                <div className="pt-20 px-6 pb-6 overflow-hidden bg-gradient-to-b md:mx-0 mx-8 from-[#ADE792] to-transparent w-96 h-[480px] absolute left-1/2 -translate-x-2/4 mt-16 rounded-t-[192px]">
+                <div className="pt-20 px-6 pb-6 overflow-hidden mx-auto bg-gradient-to-b from-[#ADE792] to-transparent w-96 h-[480px] absolute left-1/2 -translate-x-2/4 mt-16 rounded-t-[192px]">
                     <img src={ME} alt="" />
                 </div>
                 <a

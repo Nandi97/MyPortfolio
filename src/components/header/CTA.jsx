@@ -3,7 +3,7 @@ import CV from '../../assets/cv.pdf'
 
 function CTA() {
     return (
-        <div className="mt-10 flex gap-5 justify-center">
+        <div className="mt-10 hidden lg:flex gap-5 justify-center">
             <a
                 className="border hover:border-white hover:text-white text-sm md:text-base border-[#6ECCAF] p-2 rounded-md text-[#6ECCAF]"
                 href={CV}
