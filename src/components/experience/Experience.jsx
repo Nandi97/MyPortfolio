@@ -20,69 +20,69 @@ function Experience() {
             <h2 className="pb-10 text-3xl text-sky-400">My Experience</h2>
 
             <div className="container grid grid-cols-1 gap-8 lg:grid-cols-2 experience__container">
-                <div className="px-20 py-10 transition duration-300 ease-in-out bg-blue-200 border border-transparent experience__frontend rounded-3xl hover:bg-transparent hover:text-blue-50 hover:border-blue-400 hover:cursor-default">
-                    <h3 className="mb-8 text-center text-blue-700 ">
+                <div className="px-20 py-10 transition duration-300 ease-in-out bg-blue-200 border border-transparent experience__frontend rounded-3xl hover:bg-blue-100 hover:text-blue-50 hover:border-blue-400 hover:cursor-default">
+                    <h3 className="mb-8 text-center text-blue-700">
                         Frontend Development
                     </h3>
                     <div className="grid grid-cols-1 gap-4 md:gap-8 md:grid-cols-2 experience__content">
                         <article className="experience__details">
                             <AiFillHtml5 className="text-[#FF5733]" />
-                            <h4>HTML</h4>
-                            <small className="text-blue-50">Experienced</small>
+                            <h4 className='text-blue-900'>HTML</h4>
+                            <small className="text-blue-800">Experienced</small>
                         </article>
                         <article className="experience__details">
                             <IoLogoCss3 className="text-[#264de4]" />
-                            <h4>CSS</h4>
-                            <small className="text-blue-50">Intermediate</small>
+                            <h4 className='text-blue-900'>CSS</h4>
+                            <small className="text-blue-800">Intermediate</small>
                         </article>
                         <article className="experience__details">
                             <DiJavascript className="text-[#F0DB4F]" />
-                            <h4>Javascript</h4>
-                            <small className="text-blue-50">Experienced</small>
+                            <h4 className='text-blue-900'>Javascript</h4>
+                            <small className="text-blue-800">Experienced</small>
                         </article>
                         <article className="experience__details">
                             <SiTailwindcss className="text-[#3CB0AF]" />
-                            <h4>Tailwind CSS</h4>
-                            <small className="text-blue-50">Experienced</small>
+                            <h4 className='text-blue-900'>Tailwind CSS</h4>
+                            <small className="text-blue-800">Experienced</small>
                         </article>
                         <article className="experience__details">
                             <GrReactjs className="text-[#61DBFB]" />
-                            <h4>ReactJS</h4>
-                            <small className="text-blue-50">Experienced</small>
+                            <h4 className='text-blue-900'>ReactJS</h4>
+                            <small className="text-blue-800">Experienced</small>
                         </article>
                     </div>
                 </div>
                 {/* END OF FRONTEND EXPERIENCE */}
 
-                <div className="px-20 py-10 transition duration-300 ease-in-out bg-blue-200 border border-transparent experience__backend rounded-3xl hover:bg-transparent hover:text-blue-50 hover:border-blue-400 hover:cursor-default">
+                <div className="px-20 py-10 transition duration-300 ease-in-out bg-blue-200 border border-transparent experience__backend rounded-3xl hover:bg-blue-100 hover:text-blue-50 hover:border-blue-400 hover:cursor-default">
                     <h3 className="mb-8 text-center text-blue-700">
                         Backend Development
                     </h3>
                     <div className="grid grid-cols-1 gap-4 md:gap-8 md:grid-cols-2 experience__content">
                         <article className="experience__details">
                             <FaNodeJs className="text-[#68A063]" />
-                            <h4>Node JS</h4>
-                            <small className="text-blue-50">Experienced</small>
+                            <h4 className='text-blue-900'>Node JS</h4>
+                            <small className="text-blue-800">Experienced</small>
                         </article>
                         <article className="experience__details">
                             <SiMongodb className="text-[#4DB33D]" />
-                            <h4>MongoDb</h4>
-                            <small className="text-blue-50">Intermediate</small>
+                            <h4 className='text-blue-900'>MongoDb</h4>
+                            <small className="text-blue-800">Intermediate</small>
                         </article>
                         <article className="experience__details">
                             <DiPhp className="text-[#787CB5]" />
-                            <h4>PHP</h4>
-                            <small className="text-blue-50">Experienced</small>
+                            <h4 className='text-blue-900'>PHP</h4>
+                            <small className="text-blue-800">Experienced</small>
                         </article>
                         <article className="experience__details">
                             <FaLaravel className="text-[#F05340]" />
-                            <h4>Laravel</h4>
-                            <small className="text-blue-50">Experienced</small>
+                            <h4 className='text-blue-900'>Laravel</h4>
+                            <small className="text-blue-800">Experienced</small>
                         </article>
                         <article className="experience__details">
                             <SiMysql className="text-[#F29111]" />
-                            <h4>MySQL</h4>
-                            <small className="text-blue-50">Experienced</small>
+                            <h4 className='text-blue-900'>MySQL</h4>
+                            <small className="text-blue-800">Experienced</small>
                         </article>
                     </div>
                 </div>
