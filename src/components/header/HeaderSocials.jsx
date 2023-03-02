@@ -6,7 +6,7 @@ const HeaderSocials = () => {
     return (
         <div className="absolute left-0 flex-col items-center hidden gap-3 header__socials lg:flex bottom-12">
             <a
-                className="text-[#ADE792] hover:text-white"
+                className="text-[#c7493a] hover:text-white"
                 href="https://www.linkedin.com/in/alvin-kigen-5752581a9/"
                 target="_blank"
                 rel="noreferrer"
@@ -14,7 +14,7 @@ const HeaderSocials = () => {
                 <BsLinkedin />
             </a>
             <a
-                className="text-[#ADE792] hover:text-white"
+                className="text-[#c7493a] hover:text-white"
                 href="https://github.com/Nandi97/"
                 target="_blank"
                 rel="noreferrer"

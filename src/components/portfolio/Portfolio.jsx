@@ -1,4 +1,5 @@
 import React from 'react'
+import './portfolio.css'
 import IMG1 from '../../assets/portfolio1.jpg'
 import IMG2 from '../../assets/portfolio2.jpg'
 import IMG3 from '../../assets/portfolio3.jpg'
@@ -6,61 +7,202 @@ import IMG4 from '../../assets/portfolio4.jpg'
 import IMG5 from '../../assets/portfolio5.png'
 import IMG6 from '../../assets/portfolio6.jpg'
 
+const data = [
+    {
+    id:1,
+    image: IMG1,
+    title: "Crypto Currency Dashboard and Financial Visualization",
+    github: "https://github.com/Nandi97",
+    demo: "https://dribbble.com/Alien_pixels"
+},
+    {
+    id:2,
+    image: IMG2,
+    title: "Charts templates & infographics in Figma",
+    github: "https://github.com/Nandi97",
+    demo: "https://dribbble.com/Alien_pixels"
+},
+    {
+    id:3,
+    image: IMG3,
+    title: "Figma dhasboard UI kit for data design web apps",
+    github: "https://github.com/Nandi97",
+    demo: "https://dribbble.com/Alien_pixels"
+},
+    {
+    id:4,
+    image: IMG4,
+    title: "Maintaining tasks and tracking progress",
+    github: "https://github.com/Nandi97",
+    demo: "https://dribbble.com/Alien_pixels"
+},
+    {
+    id:5,
+    image: IMG5,
+    title: "Charts Templates and infographic in Figma",
+    github: "https://github.com/Nandi97",
+    demo: "https://dribbble.com/Alien_pixels"
+},
+    {
+    id:6,
+    image: IMG6,
+    title: "Maintaining tasks and tracking progress",
+    github: "https://github.com/Nandi97",
+    demo: "https://dribbble.com/Alien_pixels"
+},
+]
+
+
 function Portfolio() {
     return (
         <section
-            className="flex flex-col items-center w-full p-10 lg:px-20"
             id="portfolio"
         >
             <h5>My Recent work</h5>
-            <h2 className="pb-10 text-3xl text-sky-400">Portfolio</h2>
-            <div className="container portfolio__container grid grid-cols-3 gap-10">
-                <article className="portfolio__item p-5 bg-blue-500 rounded-3xl border border-transparent transition duration-300">
+            <h2>Portfolio</h2>
+            <div className="portfolio__container">
+                <article className="portfolio__item">
                     <div className="portfolio__item-image">
-                        <img src={IMG1} alt="" srcset="" />
+                        <img src={IMG1} alt="" srcset="" /></div>
                         <h3>This is a Portfolio item title</h3>
-                        <a className="border hover:border-white hover:text-white text-sm md:text-base border-[#6ECCAF] p-2 rounded-md text-[#6ECCAF]" href="https://github.com/Nandi97" target='_blank' rel="noreferrer">Github</a>
-                        <a className="bg-[#6ECCAF] hover:bg-white border text-sm md:text-base hover:border-white text-white border-[#6ECCAF] p-2 rounded-md hover:text-[#6ECCAF]" href="https://dribbble.com/Alien_pixels" target='_blank' rel="noreferrer">Live Demo</a>
+                        
+                        <div className="portfolio__item-cta">
+                            <a
+                            className="btn text-white border-white"
+                            href="https://github.com/Nandi97"
+                            target="_blank"
+                            rel="noreferrer"
+                        >
+                            Github
+                        </a>
+                        <a
+                            className="btn-primary"
+                            href="https://dribbble.com/Alien_pixels"
+                            target="_blank"
+                            rel="noreferrer"
+                        >
+                            Live Demo
+                        </a>
                     </div>
                 </article>
-                <article className="portfolio__item p-5 bg-blue-500 rounded-3xl border border-transparent transition duration-300">
+                <article className="portfolio__item">
                     <div className="portfolio__item-image">
-                        <img src={IMG2} alt="" srcset="" />
+                        <img src={IMG2} alt="" srcset="" /></div>
                         <h3>This is a Portfolio item title</h3>
-                        <a className="border hover:border-white hover:text-white text-sm md:text-base border-[#6ECCAF] p-2 rounded-md text-[#6ECCAF]" href="https://github.com/Nandi97" target='_blank' rel="noreferrer">Github</a>
-                        <a className="bg-[#6ECCAF] hover:bg-white border text-sm md:text-base hover:border-white text-white border-[#6ECCAF] p-2 rounded-md hover:text-[#6ECCAF]" href="https://dribbble.com/Alien_pixels" target='_blank' rel="noreferrer">Live Demo</a>
+                        
+                        <div className="portfolio__item-cta">
+                            <a
+                            className="btn text-white border-white"
+                            href="https://github.com/Nandi97"
+                            target="_blank"
+                            rel="noreferrer"
+                        >
+                            Github
+                        </a>
+                        <a
+                            className="btn-primary"
+                            href="https://dribbble.com/Alien_pixels"
+                            target="_blank"
+                            rel="noreferrer"
+                        >
+                            Live Demo
+                        </a>
                     </div>
                 </article>
-                <article className="portfolio__item p-5 bg-blue-500 rounded-3xl border border-transparent transition duration-300">
+                <article className="portfolio__item">
                     <div className="portfolio__item-image">
-                        <img src={IMG3} alt="" srcset="" />
+                        <img src={IMG3} alt="" srcset="" /></div>
                         <h3>This is a Portfolio item title</h3>
-                        <a className="border hover:border-white hover:text-white text-sm md:text-base border-[#6ECCAF] p-2 rounded-md text-[#6ECCAF]" href="https://github.com/Nandi97" target='_blank' rel="noreferrer">Github</a>
-                        <a className="bg-[#6ECCAF] hover:bg-white border text-sm md:text-base hover:border-white text-white border-[#6ECCAF] p-2 rounded-md hover:text-[#6ECCAF]" href="https://dribbble.com/Alien_pixels" target='_blank' rel="noreferrer">Live Demo</a>
+                        
+                        <div className="portfolio__item-cta">
+                            <a
+                            className="btn text-white border-white"
+                            href="https://github.com/Nandi97"
+                            target="_blank"
+                            rel="noreferrer"
+                        >
+                            Github
+                        </a>
+                        <a
+                            className="btn-primary"
+                            href="https://dribbble.com/Alien_pixels"
+                            target="_blank"
+                            rel="noreferrer"
+                        >
+                            Live Demo
+                        </a>
                     </div>
                 </article>
-                <article className="portfolio__item p-5 bg-blue-500 rounded-3xl border border-transparent transition duration-300">
+                <article className="portfolio__item ">
                     <div className="portfolio__item-image">
-                        <img src={IMG4} alt="" srcset="" />
+                        <img src={IMG4} alt="" srcset="" /></div>
                         <h3>This is a Portfolio item title</h3>
-                        <a className="border hover:border-white hover:text-white text-sm md:text-base border-[#6ECCAF] p-2 rounded-md text-[#6ECCAF]" href="https://github.com/Nandi97" target='_blank' rel="noreferrer">Github</a>
-                        <a className="bg-[#6ECCAF] hover:bg-white border text-sm md:text-base hover:border-white text-white border-[#6ECCAF] p-2 rounded-md hover:text-[#6ECCAF]" href="https://dribbble.com/Alien_pixels" target='_blank' rel="noreferrer">Live Demo</a>
+                        
+                        <div className="portfolio__item-cta">
+                            <a
+                            className="btn text-white border-white"
+                            href="https://github.com/Nandi97"
+                            target="_blank"
+                            rel="noreferrer"
+                        >
+                            Github
+                        </a>
+                        <a
+                            className="btn-primary"
+                            href="https://dribbble.com/Alien_pixels"
+                            target="_blank"
+                            rel="noreferrer"
+                        >
+                            Live Demo
+                        </a>
                     </div>
                 </article>
-                <article className="portfolio__item p-5 bg-blue-500 rounded-3xl border border-transparent transition duration-300">
+                <article className="portfolio__item">
                     <div className="portfolio__item-image">
-                        <img src={IMG5} alt="" srcset="" />
+                        <img src={IMG5} alt="" srcset="" /></div>
                         <h3>This is a Portfolio item title</h3>
-                        <a className="border hover:border-white hover:text-white text-sm md:text-base border-[#6ECCAF] p-2 rounded-md text-[#6ECCAF]" href="https://github.com/Nandi97" target='_blank' rel="noreferrer">Github</a>
-                        <a className="bg-[#6ECCAF] hover:bg-white border text-sm md:text-base hover:border-white text-white border-[#6ECCAF] p-2 rounded-md hover:text-[#6ECCAF]" href="https://dribbble.com/Alien_pixels" target='_blank' rel="noreferrer">Live Demo</a>
+                        
+                        <div className="portfolio__item-cta">
+                            <a
+                            className="btn text-white border-white"
+                            href="https://github.com/Nandi97"
+                            target="_blank"
+                            rel="noreferrer"
+                        >
+                            Github
+                        </a>
+                        <a
+                            className="btn-primary"
+                            href="https://dribbble.com/Alien_pixels"
+                            target="_blank"
+                            rel="noreferrer"
+                        >
+                            Live Demo
+                        </a>
                     </div>
                 </article>
-                <article className="portfolio__item p-5 bg-blue-500 rounded-3xl border border-transparent transition duration-300">
+                <article className="portfolio__item">
                     <div className="portfolio__item-image">
-                        <img src={IMG6} alt="" srcset="" />
+                        <img src={IMG6} alt="" srcset="" /></div>
                         <h3>This is a Portfolio item title</h3>
-                        <a className="border hover:border-white hover:text-white text-sm md:text-base border-[#6ECCAF] p-2 rounded-md text-[#6ECCAF]" href="https://github.com/Nandi97" target='_blank' rel="noreferrer">Github</a>
-                        <a className="bg-[#6ECCAF] hover:bg-white border text-sm md:text-base hover:border-white text-white border-[#6ECCAF] p-2 rounded-md hover:text-[#6ECCAF]" href="https://dribbble.com/Alien_pixels" target='_blank' rel="noreferrer">Live Demo</a>
+                        
+                        <div className="portfolio__item-cta">
+                            <a
+                            className="btn text-white border-white"
+                            href="https://github.com/Nandi97"
+                            target="_blank"
+                            rel="noreferrer"
+                        >
+                            Github
+                        </a>
+                        <a
+                            className="btn-primary"
+                            href="https://dribbble.com/Alien_pixels"
+                            target="_blank"
+                            rel="noreferrer"
+                        >
+                            Live Demo
+                        </a>
                     </div>
                 </article>
             </div>

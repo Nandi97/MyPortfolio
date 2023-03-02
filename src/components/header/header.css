@@ -1,6 +1,33 @@
 .header__socials::after {
     content: '';
-    width: 2px;
-    height: 2rem;
-    background: #6eccaf;
 }
+
+@tailwind base;
+
+@layer base {
+    .header__socials::after {
+        @apply w-0.5 h-8 bg-[#c7493a] ;
+    }
+    header {
+        @apply lg:h-screen md:h-[515px] h-screen pt-28 overflow-hidden px-24
+    }
+header> div > h1 {
+    @apply text-3xl font-bold text-[#c7493a]
+}
+    header> div > h2, header > div > h5 {
+        @apply text-center text-white;
+    }
+    header > h2 {
+        @apply text-[#c7493a];
+    }
+    header > div> a {
+        @apply text-[#c7493a] text-sm hidden sm:flex absolute -right-9 bottom-20 rotate-90 font-light;
+    }
+    .header__me {
+        @apply pt-20 px-6 pb-6 overflow-hidden mx-auto bg-gradient-to-b from-[#689775] to-transparent w-96 h-[480px] absolute left-1/2 -translate-x-2/4 mt-16 rounded-t-[192px];
+    }
+}
+
+
+@tailwind components;
+@tailwind utilities;

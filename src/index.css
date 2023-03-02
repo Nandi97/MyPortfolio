@@ -1,6 +1,53 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
 
 @tailwind base;
+
+@layer base {
+    html {
+        @apply scroll-smooth;
+    }
+    body {
+        @apply bg-[#1A1A1D] text-[#fff] leading-7 bg-[url(../src/assets/bg-texture.png)] font-['Popins'];
+    }
+    h1,
+    h2,
+    h3,
+    h4,
+    h5 {
+        @apply font-medium;
+    }
+    h1 {
+        @apply text-[40px];
+    }
+    section {
+        @apply mt-32 flex flex-col items-center w-full p-10 lg:px-20;
+    }
+    section > h2, section > h5 {
+        @apply text-center text-white;
+    }
+    section > h2 {
+        @apply text-[#c7493a] text-3xl font-bold pb-10;
+    }
+    a {
+        @apply transition-all duration-[400ms] ease-in-out text-[#c7493a] hover:text-white;
+    }
+
+    img {
+        @apply block w-full object-cover;
+    }
+    ::-webkit-scrollbar {
+        @apply hidden ;
+    }
+
+    .btn {
+        @apply text-[#C7493A] p-2 rounded-md text-sm md:text-base cursor-pointer border border-[#C7493A] transition-all duration-[400ms] ease-in-out hover:bg-white hover:text-[#1A1A1D] hover:border-transparent;
+    }
+
+    .btn-primary {
+        @apply bg-[#C7493A] p-2 text-white hover:text-[#C7493A] rounded-md hover:border-[#C7493A] text-sm md:text-base hover:bg-white hover:border
+    }
+}
+
 @tailwind components;
 @tailwind utilities;
 
@@ -13,41 +60,34 @@
     --transition: all 400ms ease;
 }
 
-html {
-    scroll-behavior: smooth;
-}
-
-::-webkit-scrollbar {
+/* ::-webkit-scrollbar {
     display: none;
-}
+} */
 
 body {
     font-family: 'Poppins', sans-serif;
-    background: var(--color-bg);
-    color: var(--color-white);
-    line-height: 1.7;
-    background-image: url(../src/assets/bg-texture.png);
-}
+}  
+/* 
 h1,
 h2,
 h3,
 h4,
 h5 {
     font-weight: 500;
-}
-
+} 
+/* 
 h1 {
     font-size: 2.5rem;
-}
-
+} 
+/* 
 section {
     margin-top: 8rem;
-}
-
+} 
+/* 
 a {
     transition: var(--transition);
-}
-
+} 
+/* 
 img {
     display: block;
-}
+} */
