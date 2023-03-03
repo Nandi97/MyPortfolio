@@ -7,9 +7,7 @@ import './about.css'
 
 const About = () => {
     return (
-        <section
-            id="about"
-        >
+        <section id="about">
             <h5>Get To know</h5>
             <h2>About Me</h2>
             <div className="container grid grid-cols-1 gap-20 about__container lg:grid-cols-12">
@@ -23,23 +21,17 @@ const About = () => {
                         <article className="about__card">
                             <FaAward className="about__icon" />
                             <h5>Experience</h5>
-                            <small>
-                                3+ Years Working
-                            </small>
+                            <small>3+ Years Working</small>
                         </article>
                         <article className="about__card">
                             <FiUsers className="about__icon" />
                             <h5>Clients</h5>
-                            <small>
-                                300+ Clients Worldwide
-                            </small>
+                            <small>300+ Clients Worldwide</small>
                         </article>
                         <article className="about__card">
                             <VscFolderLibrary className="about__icon" />
                             <h5>Projects</h5>
-                            <small>
-                                20+ Completed Projects
-                            </small>
+                            <small>20+ Completed Projects</small>
                         </article>
                     </div>
 
@@ -50,10 +42,7 @@ const About = () => {
                         facere ullam amet nobis deleniti rem odit. Ut, quas!
                     </p>
 
-                    <a
-                        href="#contact"
-                        className="btn-primary"
-                    >
+                    <a href="#contact" className="btn-primary">
                         Let's Talk
                     </a>
                 </div>

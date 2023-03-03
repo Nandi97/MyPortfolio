@@ -20,9 +20,10 @@
         @apply text-[40px];
     }
     section {
-        @apply mt-32 flex flex-col items-center w-full p-10 lg:px-20;
+        @apply mt-32 flex flex-col items-center w-full p-10 h-screen lg:px-20;
     }
-    section > h2, section > h5 {
+    section > h2,
+    section > h5 {
         @apply text-center text-white;
     }
     section > h2 {
@@ -36,7 +37,7 @@
         @apply block w-full object-cover;
     }
     ::-webkit-scrollbar {
-        @apply hidden ;
+        @apply hidden;
     }
 
     .btn {
@@ -44,7 +45,7 @@
     }
 
     .btn-primary {
-        @apply bg-[#C7493A] p-2 text-white hover:text-[#C7493A] rounded-md hover:border-[#C7493A] text-sm md:text-base hover:bg-white hover:border
+        @apply bg-[#C7493A] p-2 text-white hover:text-[#C7493A] rounded-md hover:border-[#C7493A] text-sm md:text-base hover:bg-white hover:border;
     }
 }
 
@@ -66,7 +67,7 @@
 
 body {
     font-family: 'Poppins', sans-serif;
-}  
+}
 /* 
 h1,
 h2,

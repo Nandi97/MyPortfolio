@@ -1,5 +1,5 @@
 import React from 'react'
-import './experience.css';
+import './experience.css'
 import { AiFillHtml5 } from 'react-icons/ai'
 import { IoLogoCss3 } from 'react-icons/io'
 import { DiJavascript } from 'react-icons/di'
@@ -13,18 +13,13 @@ import { SiMysql } from 'react-icons/si'
 
 function Experience() {
     return (
-        <section
-            
-            id="experience"
-        >
+        <section id="experience">
             <h5>What Skills I Have</h5>
             <h2>My Experience</h2>
 
             <div className="experience__container">
                 <div className="experience__frontend">
-                    <h3>
-                        Frontend Development
-                    </h3>
+                    <h3>Frontend Development</h3>
                     <div className="experience__content">
                         <article className="experience__details">
                             <AiFillHtml5 className="text-[#FF5733]" />
@@ -34,9 +29,7 @@ function Experience() {
                         <article className="experience__details">
                             <IoLogoCss3 className="text-[#264de4]" />
                             <h4>CSS</h4>
-                            <small>
-                                Intermediate
-                            </small>
+                            <small>Intermediate</small>
                         </article>
                         <article className="experience__details">
                             <DiJavascript className="text-[#F0DB4F]" />
@@ -58,9 +51,7 @@ function Experience() {
                 {/* END OF FRONTEND EXPERIENCE */}
 
                 <div className="experience__backend">
-                    <h3>
-                        Backend Development
-                    </h3>
+                    <h3>Backend Development</h3>
                     <div className="grid grid-cols-1 gap-4 md:gap-8 md:grid-cols-2 experience__content">
                         <article className="experience__details">
                             <FaNodeJs className="text-[#68A063]" />
@@ -70,9 +61,7 @@ function Experience() {
                         <article className="experience__details">
                             <SiMongodb className="text-[#4DB33D]" />
                             <h4>MongoDb</h4>
-                            <small>
-                                Intermediate
-                            </small>
+                            <small>Intermediate</small>
                         </article>
                         <article className="experience__details">
                             <DiPhp className="text-[#787CB5]" />

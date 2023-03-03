@@ -7,19 +7,19 @@
 @tailwind base;
 
 @layer base {
-.about__me {
-    @apply grid place-items-center aspect-square rounded-3xl lg:col-span-4 flex items-center w-full col-span-1;
+    .about__me {
+        @apply grid place-items-center aspect-square rounded-3xl lg:col-span-4 flex items-center w-full col-span-1;
     }
     .about__me-image {
-@apply rounded-3xl overflow-hidden rotate-[10deg] hover:rotate-0 transition duration-300;
+        @apply rounded-3xl overflow-hidden rotate-[10deg] hover:rotate-0 transition duration-300;
     }
     .about__content {
-@apply col-span-1 text-center lg:text-justify lg:col-span-8;
+        @apply col-span-1 text-center lg:text-justify lg:col-span-8;
     }
     .about__card {
         @apply flex flex-col items-center p-8 text-center transition duration-300 bg-[#C7493A] border rounded-2xl hover:cursor-default hover:bg-transparent;
     }
-    .about__icon{
+    .about__icon {
         @apply text-[#689775] text-2xl mb-4;
     }
     article > h5 {
@@ -34,5 +34,5 @@
 @tailwind utilities;
 
 .about__me {
-background: linear-gradient(45deg, transparent, #689775, transparent);
+    background: linear-gradient(45deg, transparent, #689775, transparent);
 }
