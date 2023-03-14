@@ -58,38 +58,35 @@ function Portfolio() {
             <h5>My Recent work</h5>
             <h2>Portfolio</h2>
             <div className="portfolio__container">
-                {
-                    data.map(({ id, image, title, github, demo }) => {
-                        return (
-                            
-                <article key={id} className="portfolio__item">
-                    <div className="portfolio__item-image">
-                        <img src={image} alt={title} srcset="" />
-                    </div>
-                                <h3>{ title }</h3>
+                {data.map(({ id, image, title, github, demo }) => {
+                    return (
+                        <article key={id} className="portfolio__item">
+                            <div className="portfolio__item-image">
+                                <img src={image} alt={title} srcset="" />
+                            </div>
+                            <h3>{title}</h3>
 
-                    <div className="portfolio__item-cta">
-                        <a
-                            className="btn text-white border-white"
-                            href={github}
-                            target="_blank"
-                            rel="noreferrer"
-                        >
-                            Github
-                        </a>
-                        <a
-                            className="btn-primary"
-                            href={demo}
-                            target="_blank"
-                            rel="noreferrer"
-                        >
-                            Live Demo
-                        </a>
-                    </div>
-                </article>
-                        )
-                    })
-                }
+                            <div className="portfolio__item-cta">
+                                <a
+                                    className="btn text-white border-white"
+                                    href={github}
+                                    target="_blank"
+                                    rel="noreferrer"
+                                >
+                                    Github
+                                </a>
+                                <a
+                                    className="btn-primary"
+                                    href={demo}
+                                    target="_blank"
+                                    rel="noreferrer"
+                                >
+                                    Live Demo
+                                </a>
+                            </div>
+                        </article>
+                    )
+                })}
             </div>
         </section>
     )

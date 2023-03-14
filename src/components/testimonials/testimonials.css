@@ -1,18 +1,17 @@
-
 @tailwind base;
 
 @layer base {
-.container.testimonials__container {
-@apply lg:w-2/5 md:w-3/5 w-[480px] pb-16;
-}
-.client__avatar {
-    @apply w-16 aspect-square overflow-hidden rounded-full mx-auto mb-4 border-[6.4px] border-[#a33327];
-}
-.testimonial {
-    @apply bg-[#c7493a] text-center p-8 rounded-3xl select-none;
-}
+    .container.testimonials__container {
+        @apply lg:w-2/5 md:w-3/5 w-full pb-16;
+    }
+    .client__avatar {
+        @apply w-16 aspect-square overflow-hidden rounded-full mx-auto mb-4 border-[6.4px] border-[#a33327];
+    }
+    .testimonial {
+        @apply bg-[#c7493a] text-center p-8 rounded-3xl select-none;
+    }
     .client__review {
-        @apply text-white font-light block w-4/5 mx-auto mt-3.5 ;
+        @apply text-white font-light block w-4/5 mx-auto mt-3.5;
     }
     .swiper-pagination-clickable .swiper-pagination-bullet {
         @apply bg-[#c7493a];
