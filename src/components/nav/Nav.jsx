@@ -1,11 +1,6 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from 'react'
 import './nav.css'
-import { AiOutlineHome } from 'react-icons/ai'
-import { AiOutlineUser } from 'react-icons/ai'
-import { BiBook } from 'react-icons/bi'
-import { RiServiceLine } from 'react-icons/ri'
-import { BiMessageSquareDetail } from 'react-icons/bi'
 import { useState } from 'react'
 
 const Nav = () => {
@@ -15,47 +10,47 @@ const Nav = () => {
             <a
                 href="#"
                 onClick={() => setActiveNav('#')}
-                className={`text-[#ADE792] ${
-                    activeNav === '#' ? 'focus:bg-black/[0.4]' : ''
+                className={`text-white ${
+                    activeNav === '#' ? 'active:text-[#ADE792]' : ''
                 } `}
             >
-                <AiOutlineHome />
+                Home
             </a>
             <a
                 href="#about"
                 onClick={() => setActiveNav('#about')}
-                className={`text-[#ADE792] ${
-                    activeNav === '#about' ? 'focus:bg-black/[0.4] ' : ''
+                className={`text-white ${
+                    activeNav === '#about' ? 'active:text-[#ADE792] ' : ''
                 } `}
             >
-                <AiOutlineUser />
+                About Me
             </a>
             <a
                 href="#experience"
                 onClick={() => setActiveNav('#experience')}
-                className={`text-[#ADE792] ${
-                    activeNav === '#experience' ? 'focus:bg-black/[0.4]' : ''
+                className={`text-white ${
+                    activeNav === '#experience' ? 'active:text-[#ADE792]' : ''
                 } `}
             >
-                <BiBook />
+                Experience
             </a>
             <a
                 href="#services"
                 onClick={() => setActiveNav('#services')}
-                className={`text-[#ADE792] ${
-                    activeNav === '#services' ? 'focus:bg-black/[0.4]' : ''
+                className={`text-white ${
+                    activeNav === '#services' ? 'active:text-[#ADE792]' : ''
                 } `}
             >
-                <RiServiceLine />
+                Services
             </a>
             <a
                 href="#contact"
                 onClick={() => setActiveNav('#contact')}
-                className={`text-[#ADE792] ${
-                    activeNav === '#contact' ? 'focus:bg-black/[0.4]' : ''
+                className={`text-white ${
+                    activeNav === '#contact' ? 'active:text-[#ADE792]' : ''
                 } `}
             >
-                <BiMessageSquareDetail />
+                Contact
             </a>
         </nav>
     )

@@ -11,28 +11,24 @@
         @apply grid place-items-center aspect-square rounded-3xl lg:col-span-4 flex items-center w-full col-span-1;
     }
     .about__me-image {
-        @apply rounded-3xl overflow-hidden rotate-[10deg] hover:rotate-0 transition duration-300;
+        @apply rounded-xl overflow-hidden grayscale;
     }
     .about__content {
         @apply col-span-1 text-center lg:text-justify lg:col-span-8;
     }
     .about__card {
-        @apply flex flex-col items-center p-8 text-center transition duration-300 bg-[#C7493A] border rounded-2xl hover:cursor-default hover:bg-transparent;
+        @apply flex flex-col items-center p-8 text-center transition duration-300 bg-opacity-20 backdrop-blur-lg bg-white border rounded-2xl hover:cursor-default hover:bg-transparent;
     }
     .about__icon {
-        @apply text-[#689775] text-2xl mb-4;
+        @apply text-[#C7493A] text-2xl mb-4;
     }
     article > h5 {
         @apply text-base;
     }
     article > small {
-        @apply text-xs text-[#ffffff99];
+        @apply text-xs text-[#fff];
     }
 }
 
 @tailwind components;
 @tailwind utilities;
-
-.about__me {
-    background: linear-gradient(45deg, transparent, #689775, transparent);
-}

@@ -2,10 +2,10 @@
 
 @layer base {
     .services__container {
-        @apply container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 md:gap-8 gap-4 lg:gap-12;
+        @apply container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 md:gap-8 gap-4 lg:gap-12;
     }
     section > div > article {
-        @apply hover:border h-fit border-[#C7493A] bg-[#C7493A] transition duration-300 rounded-b-3xl hover:cursor-default hover:bg-[#C7493A99] hover:text-white;
+        @apply hover:border bg-white bg-opacity-20 backdrop-blur-lg drop-shadow-lg h-fit border-[#C7493A] transition duration-300 rounded-b-3xl hover:cursor-default hover:bg-[#C7493A99] hover:text-white;
     }
 
     .service__head {
@@ -23,10 +23,10 @@
     }
 
     .service__list-icon {
-        @apply text-blue-900 mt-[2px];
+        @apply text-[#C7493A99] mt-[2px];
     }
     li > p {
-        @apply text-sm;
+        @apply text-sm hover:underline;
     }
 }
 

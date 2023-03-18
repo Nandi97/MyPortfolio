@@ -2,10 +2,10 @@
 
 @layer base {
     nav {
-        @apply bg-black/[0.3] w-fit py-3 px-7 z-[2] fixed left-2/4 -translate-x-1/2 block flex backdrop-blur-lg bottom-8 gap-3 rounded-[48px];
+        @apply bg-black/[0.3] w-full py-3 px-7 z-[2] fixed block flex backdrop-blur-lg top-0 gap-3 justify-end;
     }
     nav > a {
-        @apply focus:text-white  hover:text-white bg-transparent p-3 rounded-full flex text-lg hover:bg-black/[0.4];
+        @apply focus:text-white  hover:text-[#ADE792] bg-transparent p-3 rounded-full flex text-lg hover:underline hover:underline-offset-8 decoration-2;
     }
 }
 
