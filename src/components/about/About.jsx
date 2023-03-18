@@ -7,7 +7,7 @@ import './about.css'
 
 const About = () => {
     return (
-        <section id="about" className='bg-black'>
+        <section id="about" className="bg-black">
             <h5>Get To know</h5>
             <h2>About Me</h2>
             <div className="container grid grid-cols-1 gap-20 about__container lg:grid-cols-12">
@@ -21,28 +21,52 @@ const About = () => {
                         <article className="about__card">
                             <FaAward className="about__icon" />
                             <h5>Experience</h5>
-                            <small className='text-white'>3+ Years Working</small>
+                            <small className="text-white">
+                                3+ Years Working
+                            </small>
                         </article>
                         <article className="about__card">
                             <FiUsers className="about__icon" />
                             <h5>Clients</h5>
-                            <small className='text-white'>10+ Clients Worldwide</small>
+                            <small className="text-white">
+                                10+ Clients Worldwide
+                            </small>
                         </article>
                         <article className="about__card">
                             <VscFolderLibrary className="about__icon" />
                             <h5>Projects</h5>
-                            <small className='text-white'>10+ Completed Projects</small>
+                            <small className="text-white">
+                                10+ Completed Projects
+                            </small>
                         </article>
                     </div>
 
                     <p className="mt-8 mb-10 text-[#ffffff] my-6 lg:my-0 lg:py-5">
-                        Hi there! I'm an IT expert with a passion for web development and a solid set of skills in various frameworks, including Laravel and React, as well as proficiency in web languages such as HTML and CSS. I'm also highly competent in networking, virtual machine setup, and server management. Additionally, I have extensive knowledge of hardware and PC builds, specifically geared towards high-end gaming and networking.
+                        Hi there! I'm an IT expert with a passion for web
+                        development and a solid set of skills in various
+                        frameworks, including Laravel and React, as well as
+                        proficiency in web languages such as HTML and CSS. I'm
+                        also highly competent in networking, virtual machine
+                        setup, and server management. Additionally, I have
+                        extensive knowledge of hardware and PC builds,
+                        specifically geared towards high-end gaming and
+                        networking.
                     </p>
                     <p className="mt-8 mb-10 text-[#ffffff] my-6 lg:my-0 lg:py-5">
-I'm highly motivated and always eager to learn new technologies and techniques to improve my skills and enhance my projects. Whether it's building a responsive website, creating a powerful gaming rig, or optimizing server performance, I bring a dedicated approach and a strong work ethic to every project.</p>
+                        I'm highly motivated and always eager to learn new
+                        technologies and techniques to improve my skills and
+                        enhance my projects. Whether it's building a responsive
+                        website, creating a powerful gaming rig, or optimizing
+                        server performance, I bring a dedicated approach and a
+                        strong work ethic to every project.
+                    </p>
                     <p className="mt-8 mb-10 text-[#ffffff] my-6 lg:my-0 lg:py-5">
-
-In my free time, I enjoy experimenting with new technologies and creating personal projects to expand my skills and explore new concepts. I'm always looking for opportunities to collaborate with like-minded individuals and take on new challenges in the world of IT.
+                        In my free time, I enjoy experimenting with new
+                        technologies and creating personal projects to expand my
+                        skills and explore new concepts. I'm always looking for
+                        opportunities to collaborate with like-minded
+                        individuals and take on new challenges in the world of
+                        IT.
                     </p>
 
                     <a href="#contact" className="btn-primary">

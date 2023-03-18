@@ -2,7 +2,6 @@ import React from 'react'
 import './services.css'
 import { AiOutlineCheck } from 'react-icons/ai'
 
-
 const Services = () => {
     return (
         <section id="services">
@@ -168,7 +167,9 @@ const Services = () => {
                         </li>
                         <li>
                             <AiOutlineCheck className="service__list-icon" />
-                            <p>System monitoring and performance optimization</p>
+                            <p>
+                                System monitoring and performance optimization
+                            </p>
                         </li>
                         <li>
                             <AiOutlineCheck className="service__list-icon" />

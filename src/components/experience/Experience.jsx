@@ -13,13 +13,15 @@ import { SiMysql } from 'react-icons/si'
 
 function Experience() {
     return (
-        <section id="experience" className='bg-white'>
-            <h5 className='text-black'>What Skills I Have</h5>
+        <section id="experience" className="bg-white">
+            <h5 className="text-black">What Skills I Have</h5>
             <h2>My Experience</h2>
 
             <div className="experience__container">
                 <div className="experience__frontend">
-                    <h3 className='mb-12 text-xl text-center text-black'>Frontend Development</h3>
+                    <h3 className="mb-12 text-xl text-center text-black">
+                        Frontend Development
+                    </h3>
                     <div className="experience__content">
                         <article className="experience__details">
                             <AiFillHtml5 className="text-[#FF5733]" />
@@ -51,7 +53,9 @@ function Experience() {
                 {/* END OF FRONTEND EXPERIENCE */}
 
                 <div className="experience__backend">
-                    <h3 className=' mb-12 text-xl text-center text-black'>Backend Development</h3>
+                    <h3 className=" mb-12 text-xl text-center text-black">
+                        Backend Development
+                    </h3>
                     <div className="grid grid-cols-1 gap-4 md:gap-8 md:grid-cols-2 experience__content">
                         <article className="experience__details">
                             <FaNodeJs className="text-[#68A063]" />

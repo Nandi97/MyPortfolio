@@ -10,7 +10,6 @@ function CTA() {
             <a className="btn-primary" href="#contact">
                 Lets's Talk
             </a>
-            
         </div>
     )
 }

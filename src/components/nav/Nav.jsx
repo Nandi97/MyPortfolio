@@ -11,7 +11,7 @@ const Nav = () => {
                 href="#"
                 onClick={() => setActiveNav('#')}
                 className={`text-white ${
-                    activeNav === '#' ? 'active:text-[#ADE792]' : ''
+                    activeNav === '#' ? 'active:text-[#c7493a]' : ''
                 } `}
             >
                 Home
@@ -20,7 +20,7 @@ const Nav = () => {
                 href="#about"
                 onClick={() => setActiveNav('#about')}
                 className={`text-white ${
-                    activeNav === '#about' ? 'active:text-[#ADE792] ' : ''
+                    activeNav === '#about' ? 'active:text-[#c7493a] ' : ''
                 } `}
             >
                 About Me
@@ -29,7 +29,7 @@ const Nav = () => {
                 href="#experience"
                 onClick={() => setActiveNav('#experience')}
                 className={`text-white ${
-                    activeNav === '#experience' ? 'active:text-[#ADE792]' : ''
+                    activeNav === '#experience' ? 'active:text-[#c7493a]' : ''
                 } `}
             >
                 Experience
@@ -38,7 +38,7 @@ const Nav = () => {
                 href="#services"
                 onClick={() => setActiveNav('#services')}
                 className={`text-white ${
-                    activeNav === '#services' ? 'active:text-[#ADE792]' : ''
+                    activeNav === '#services' ? 'active:text-[#c7493a]' : ''
                 } `}
             >
                 Services
@@ -47,7 +47,7 @@ const Nav = () => {
                 href="#contact"
                 onClick={() => setActiveNav('#contact')}
                 className={`text-white ${
-                    activeNav === '#contact' ? 'active:text-[#ADE792]' : ''
+                    activeNav === '#contact' ? 'active:text-[#c7493a]' : ''
                 } `}
             >
                 Contact

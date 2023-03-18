@@ -14,17 +14,18 @@
     .name {
         @apply text-3xl font-bold text-[#c7493a];
     }
-    .intro, .name {
+    .intro,
+    .name {
         @apply text-center text-white;
     }
     header > div > h2 {
         @apply text-[#c7493a];
     }
     header > div > a {
-        @apply text-[#c7493a] text-sm hidden sm:flex absolute -right-9 bottom-20 rotate-90 font-light;
+        @apply text-[#c7493a] hover:text-black text-sm hidden pr-10 sm:flex absolute -right-9 bottom-20 rotate-90 font-light;
     }
     .header__me {
-        @apply pt-20 px-6 mb-6 overflow-hidden flex items-center justify-items-center h-full mx-auto md:col-span-6 col-span-12;
+        @apply pt-20 px-6 mb-6 overflow-hidden  flex items-center justify-items-center h-full mx-auto md:col-span-6 col-span-12;
     }
 }
 

@@ -54,8 +54,8 @@ const data = [
 
 function Portfolio() {
     return (
-        <section id="portfolio" className='bg-white'>
-            <h5 className='text-black'>My Recent work</h5>
+        <section id="portfolio" className="bg-white">
+            <h5 className="text-black">My Recent work</h5>
             <h2>Portfolio</h2>
             <div className="portfolio__container">
                 {data.map(({ id, image, title, github, demo }) => {
