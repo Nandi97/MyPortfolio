@@ -1,6 +1,6 @@
 import React from 'react'
 import CTA from './CTA'
-import ME from '../../assets/me.png'
+import ME from '../../assets/me.webp'
 import { LazyLoadImage } from 'react-lazy-load-image-component'
 import HeaderSocials from './HeaderSocials'
 import './header.css'
@@ -8,10 +8,10 @@ import './header.css'
 const Header = () => {
     return (
         // <header>
-        //     <div className="text-center h-full relative">
+        //     <div className="relative h-full text-center">
         //         <div className="grid grid-cols-12 justify-items-center">
-        //         <div className="md:col-span-6 content-center h-full col-span-12">
-        //         <h5 className="intro text-center text-black">Hello I'm</h5>
+        //         <div className="content-center h-full col-span-12 md:col-span-6">
+        //         <h5 className="text-center text-black intro">Hello I'm</h5>
         //         <h1 className="name text-3xl font-bold text-[#c7493a] text-center">Alvin Kigen</h1>
         //                 <h5 className="text-[#000]">Fullstack Developer</h5>
         //                 <CTA />
@@ -26,10 +26,10 @@ const Header = () => {
         //     </div>
         // </header>
         <header>
-            <div className="mx-auto h-full">
+            <div className="h-full mx-auto">
                 <div className="grid grid-cols-12">
-                    <div className="md:col-span-6 col-span-full flex flex-col h-full items-center">
-                        <h5 className="intro text-center text-black">
+                    <div className="flex flex-col items-center h-full md:col-span-6 col-span-full">
+                        <h5 className="text-center text-black intro">
                             Hello I'm
                         </h5>
                         <h1 className="name text-3xl font-bold text-[#c7493a] text-center">
@@ -38,7 +38,7 @@ const Header = () => {
                         <h5 className="text-[#000]">Fullstack Developer</h5>
                         <CTA />
                     </div>
-                    <div className="md:col-span-6 drop-shadow-2xl col-span-full h-full items-center py-10">
+                    <div className="items-center h-full py-10 md:col-span-6 drop-shadow-2xl col-span-full">
                         <LazyLoadImage
                             width={600}
                             className="h-auto max-w-xl transition-all duration-300 rounded-lg cursor-pointer filter grayscale hover:grayscale-0"

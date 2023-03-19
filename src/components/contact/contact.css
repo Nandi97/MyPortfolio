@@ -1,6 +1,21 @@
 @tailwind base;
 
 @layer base {
+    .container.contact__container {
+        @apply grid grid-cols-1 gap-4 md:grid-cols-12;
+    }
+    .contact__options {
+        @apply flex flex-col col-span-1 gap-5 text-black md:col-span-5 md:px-10;
+    }
+    .contact__option {
+        @apply rounded-3xl hover:bg-transparent hover:text-black hover:border-[#C7493A] hover:cursor-default px-20 py-10 transition duration-300 ease-in-out border border-transparent bg-black bg-opacity-20 backdrop-blur-lg drop-shadow-lg flex items-center flex-col gap-2;
+    }
+    .contact__option-icon {
+        @apply text-2xl;
+    }
+    form {
+        @apply col-span-1 mt-10 md:col-span-7;
+    }
 }
 
 @tailwind components;

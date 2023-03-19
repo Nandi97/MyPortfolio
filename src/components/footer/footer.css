@@ -1,0 +1,29 @@
+
+@tailwind base;
+
+@layer base {
+footer {
+    @apply px-12 mt-10 text-sm text-center md:mt-20;
+}
+.footer__logo {
+    @apply text-4xl inline-block mb-4
+}
+footer a {
+    @apply text-sm 
+}
+.permalinks {
+    @apply flex flex-wrap justify-center md:gap-8 m-auto mb-4 md:mb-12
+}
+.footer__socials {
+    @apply flex justify-center gap-4 md:mb-16 mb-6
+}
+.footer__socials a {
+    @apply p-2 bg-white rounded-xl text-lg flex border border-transparent border-[#C7493A] hover:bg-[#C7493A99] transition duration-300 bg-opacity-20 backdrop-blur-lg drop-shadow-lg
+}
+.footer__copyright {
+    @apply md:mb-16 mb-6
+}
+}
+
+@tailwind components;
+@tailwind utilities;
