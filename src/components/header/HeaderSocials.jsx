@@ -4,7 +4,7 @@ import { BsGithub } from 'react-icons/bs'
 
 const HeaderSocials = () => {
     return (
-        <div className="pl-10 absolute left-0 flex-col items-center gap-3 header__socials lg:flex bottom-12">
+        <div className="absolute left-0 flex-col items-center hidden gap-3 pl-10 header__socials lg:flex bottom-12">
             <a
                 className="hover:text-[#c7493a] text-black"
                 href="https://www.linkedin.com/in/alvin-kigen-5752581a9/"

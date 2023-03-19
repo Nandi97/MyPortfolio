@@ -2,9 +2,9 @@
 
 @layer base {
     nav {
-        @apply bg-black/[0.3] w-full py-3 px-7 z-[2] fixed block flex backdrop-blur-lg top-0 gap-3 justify-end;
+        @apply  w-full z-[2] shadow-md fixed backdrop-blur-lg top-0 left-0 gap-3;
     }
-    nav > a {
+    ul > li {
         @apply focus:text-white  hover:text-[#c7493a] transition-all duration-300 bg-transparent p-3 rounded-full flex text-lg hover:underline hover:underline-offset-8 decoration-2;
     }
 }

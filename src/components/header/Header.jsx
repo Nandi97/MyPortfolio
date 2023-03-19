@@ -1,7 +1,7 @@
 import React from 'react'
 import CTA from './CTA'
 import ME from '../../assets/me.png'
-import { LazyLoadImage } from "react-lazy-load-image-component"
+import { LazyLoadImage } from 'react-lazy-load-image-component'
 import HeaderSocials from './HeaderSocials'
 import './header.css'
 
@@ -39,7 +39,12 @@ const Header = () => {
                         <CTA />
                     </div>
                     <div className="md:col-span-6 drop-shadow-2xl col-span-full h-full items-center py-10">
-                        <LazyLoadImage width={600} className='h-auto max-w-xl transition-all duration-300 rounded-lg cursor-pointer filter grayscale hover:grayscale-0' src={ME} alt="" />
+                        <LazyLoadImage
+                            width={600}
+                            className="h-auto max-w-xl transition-all duration-300 rounded-lg cursor-pointer filter grayscale hover:grayscale-0"
+                            src={ME}
+                            alt=""
+                        />
                     </div>
                 </div>
 

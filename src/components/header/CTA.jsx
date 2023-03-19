@@ -3,7 +3,7 @@ import CV from '../../assets/cv.pdf'
 
 function CTA() {
     return (
-        <div className="mt-10 lg:flex gap-5 justify-center">
+        <div className="flex-col justify-center gap-5 mt-10 lg:flex md:flex-row">
             <a className="btn" href={CV} download>
                 Download CV
             </a>
