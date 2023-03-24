@@ -9,7 +9,7 @@
         @apply w-0.5 h-8 bg-black;
     }
     header {
-        @apply lg:h-screen md:h-[515px] h-screen pt-28 overflow-hidden px-24 bg-white py-10;
+        @apply lg:h-screen mx-auto pt-28 overflow-hidden px-10 bg-white;
     }
     .name {
         @apply text-3xl font-bold text-[#c7493a];

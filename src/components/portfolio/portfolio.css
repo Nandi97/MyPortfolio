@@ -2,17 +2,17 @@
 
 @layer base {
     .portfolio__container {
-        @apply container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-5 lg:gap-10;
+        @apply container grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3 md:gap-5 lg:gap-10;
     }
 
     .portfolio__item {
-        @apply p-4 bg-[#a33327] bg-opacity-20 backdrop-blur-lg  drop-shadow-lg rounded-3xl border border-transparent transition duration-300 hover:border-[#a33327] hover:bg-transparent;
+        @apply p-4 bg-[#fff] bg-opacity-70 backdrop-blur-lg  drop-shadow-lg rounded-[20px] border border-transparent transition duration-300 flex flex-col items-center w-full;
     }
-    .portfolio__item-image {
-        @apply rounded-3xl overflow-hidden;
-    }
+    /* .portfolio__item-image {
+        @apply overflow-hidden rounded-3xl;
+    } */
     .portfolio__item h3 {
-        @apply mt-5 mb-8 text-left text-black;
+        @apply mt-5 mb-8 text-left text-[#C7493A];
     }
     .portfolio__item-cta {
         @apply flex gap-4 mb-4;
@@ -21,3 +21,13 @@
 
 @tailwind components;
 @tailwind utilities;
+
+.portfolio__item {
+    box-shadow:   20px 20px 40px #999999,
+             -20px -20px 40px #ffffff;
+}
+.portfolio__item:hover {
+    background: linear-gradient(145deg, #e6e6e6, #ffffff);
+box-shadow:  20px 20px 40px #999999,
+             -20px -20px 40px #ffffff;
+}

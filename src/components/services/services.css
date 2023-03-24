@@ -23,7 +23,7 @@
     }
 
     .service__list-icon {
-        @apply text-[#C7493A99] mt-[2px];
+        @apply text-[#fff] pt-[2px] w-5;
     }
     li > p {
         @apply text-sm hover:underline;

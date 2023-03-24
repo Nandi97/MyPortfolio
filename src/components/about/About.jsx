@@ -7,7 +7,7 @@ import './about.css'
 
 const About = () => {
     return (
-        <section id="about" className="bg-black">
+        <section id="about" className="bg-[#212121]">
             <h5>Get To know</h5>
             <h2>About Me</h2>
             <div className="container grid grid-cols-1 gap-20 about__container lg:grid-cols-12">

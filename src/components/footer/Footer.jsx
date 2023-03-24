@@ -16,17 +16,14 @@ const Footer = () => {
     ]
     return (
         <footer>
-            <div className="footer__logo">
-                AKIGEN
-            </div>
+            <div className="footer__logo">AKIGEN</div>
 
             <ul className="permalinks">
-                 {Links.map((link) => (
-                <li key={link.name}>
-                    <a href={link.link}>{link.name}</a>
-                </li>
-                        ))}
-                
+                {Links.map((link) => (
+                    <li key={link.name}>
+                        <a href={link.link}>{link.name}</a>
+                    </li>
+                ))}
             </ul>
             <div className="footer__socials">
                 <a href="https://www.facebook.com/cartez.detwiler1">

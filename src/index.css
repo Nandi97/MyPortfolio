@@ -7,7 +7,7 @@
         @apply scroll-smooth;
     }
     body {
-        @apply bg-[#000] text-[#fff] leading-7 font-['Popins'];
+        @apply bg-[#212121] text-[#fff] leading-7 font-['Popins'];
     }
     h1,
     h2,

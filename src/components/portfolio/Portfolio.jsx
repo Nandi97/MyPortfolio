@@ -1,92 +1,53 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import './portfolio.css'
-import IMG1 from '../../assets/portfolio1.jpg'
-import IMG2 from '../../assets/portfolio2.jpg'
-import IMG3 from '../../assets/portfolio3.jpg'
-import IMG4 from '../../assets/portfolio4.jpg'
-import IMG5 from '../../assets/portfolio5.png'
-import IMG6 from '../../assets/portfolio6.jpg'
+import { GIT_API_URL, gitApiOptions } from '../../api'
 
-const data = [
-    {
-        id: 1,
-        image: IMG1,
-        title: 'Crypto Currency Dashboard and Financial Visualization',
-        github: 'https://github.com/Nandi97',
-        demo: 'https://dribbble.com/Alien_pixels',
-    },
-    {
-        id: 2,
-        image: IMG2,
-        title: 'Charts templates & infographics in Figma',
-        github: 'https://github.com/Nandi97',
-        demo: 'https://dribbble.com/Alien_pixels',
-    },
-    {
-        id: 3,
-        image: IMG3,
-        title: 'Figma dhasboard UI kit for data design web apps',
-        github: 'https://github.com/Nandi97',
-        demo: 'https://dribbble.com/Alien_pixels',
-    },
-    {
-        id: 4,
-        image: IMG4,
-        title: 'Maintaining tasks and tracking progress',
-        github: 'https://github.com/Nandi97',
-        demo: 'https://dribbble.com/Alien_pixels',
-    },
-    {
-        id: 5,
-        image: IMG5,
-        title: 'Charts Templates and infographic in Figma',
-        github: 'https://github.com/Nandi97',
-        demo: 'https://dribbble.com/Alien_pixels',
-    },
-    {
-        id: 6,
-        image: IMG6,
-        title: 'Maintaining tasks and tracking progress',
-        github: 'https://github.com/Nandi97',
-        demo: 'https://dribbble.com/Alien_pixels',
-    },
-]
+const Portfolio = () => {
+    const [repoData, setRepoData] = useState([])
 
-function Portfolio() {
+    useEffect(() => {
+        const getRepoList = async () => {
+            const url = `${GIT_API_URL}/repos?per_page=6`
+            try {
+                const response = await fetch(url,gitApiOptions)
+                const data = await response.json()
+
+                setRepoData(data)
+            } catch (err) {
+                console.error(err)
+            }
+        }
+        getRepoList()
+    }, [])
     return (
         <section id="portfolio" className="bg-white">
-            <h5 className="text-black">My Recent work</h5>
-            <h2>Portfolio</h2>
+            <h2>My Portfolio</h2>
+            <h5 className="pb-5 text-black">
+                My half done projects live here for the world to see my shame 😑
+            </h5>
             <div className="portfolio__container">
-                {data.map(({ id, image, title, github, demo }) => {
-                    return (
-                        <article key={id} className="portfolio__item">
-                            <div className="portfolio__item-image">
-                                <img src={image} alt={title} srcset="" />
-                            </div>
-                            <h3>{title}</h3>
+                <>
+                    {repoData.map((repo) => (
+                        <article key={repo.id} className="portfolio__item">
+                            {/* <div className="portfolio__item-image">
+                                    <img src={image} alt={title} srcset="" />
+                                </div> */}
+                            <h3>{repo.name}</h3>
 
                             <div className="portfolio__item-cta">
                                 <a
-                                    className="btn text-black"
-                                    href={github}
+                                    className="text-black btn"
+                                    href={repo.html_url}
                                     target="_blank"
                                     rel="noreferrer"
                                 >
                                     Github
                                 </a>
-                                <a
-                                    className="btn-primary"
-                                    href={demo}
-                                    target="_blank"
-                                    rel="noreferrer"
-                                >
-                                    Live Demo
-                                </a>
                             </div>
                         </article>
-                    )
-                })}
+                    ))}
+                    ;
+                </>
             </div>
         </section>
     )

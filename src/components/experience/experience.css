@@ -5,11 +5,11 @@
         @apply container grid grid-cols-1 gap-8 lg:grid-cols-2;
     }
     .experience__frontend {
-        @apply rounded-3xl hover:bg-transparent hover:text-black hover:border-[#C7493A] hover:cursor-default px-20 py-10 transition duration-300 ease-in-out border border-transparent bg-black bg-opacity-20 backdrop-blur-lg drop-shadow-lg;
+        @apply rounded-3xl hover:bg-transparent hover:text-black hover:border-[#C7493A] hover:cursor-default px-4 md:px-20 py-10 transition duration-300 ease-in-out border border-transparent bg-black bg-opacity-20 backdrop-blur-lg drop-shadow-lg;
     }
 
     .experience__backend {
-        @apply rounded-3xl hover:bg-transparent hover:text-black hover:border-[#C7493A] hover:cursor-default px-20 py-10 transition duration-300 ease-in-out border border-transparent bg-black bg-opacity-20 backdrop-blur-lg drop-shadow-lg;
+        @apply rounded-3xl hover:bg-transparent hover:text-black hover:border-[#C7493A] hover:cursor-default px-4 md:px-20 py-10 transition duration-300 ease-in-out border border-transparent bg-black bg-opacity-20 backdrop-blur-lg drop-shadow-lg;
     }
 
     h3 {

@@ -11,7 +11,7 @@
         @apply grid place-items-center aspect-square rounded-3xl lg:col-span-4 flex items-center w-full col-span-1;
     }
     .about__me-image {
-        @apply rounded-xl overflow-hidden grayscale;
+        @apply rounded-[30px] overflow-hidden grayscale bg-[#212121];
     }
     .about__content {
         @apply col-span-1 text-center lg:text-justify lg:col-span-8;
@@ -32,3 +32,7 @@
 
 @tailwind components;
 @tailwind utilities;
+
+.about__me-image {
+    box-shadow: 15px 15px 30px rgb(25, 25, 25), -15px -15px 30px rgb(60, 60, 60);
+}
