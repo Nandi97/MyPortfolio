@@ -1,7 +1,6 @@
 import React from 'react'
 import CTA from './CTA'
 import ME from '../../assets/me.webp'
-import ME_BG from '../../assets/blob-shape.svg'
 import { LazyLoadImage } from 'react-lazy-load-image-component'
 import HeaderSocials from './HeaderSocials'
 import './header.css'
@@ -11,7 +10,7 @@ const Header = () => {
         <header>
             <div class="sm:px-6 lg:px-8 py-10">
                 <div class="grid items-center grid-cols-1 md:grid-cols-2">
-                    <div className="flex flex-col items-center justify-center h-full md:-mt-48">
+                    <div className="z-10 flex flex-col items-center justify-center h-full md:-mt-48">
                         <h2 class="text-3xl font-bold leading-tight text-black sm:text-4xl lg:text-5xl">
                             Hey 👋 I am <br class="block sm:hidden" />
                             <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-500 to-violet-500">
