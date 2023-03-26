@@ -1,6 +1,5 @@
 import React from 'react'
 import CTA from './CTA'
-import ME from '../../assets/me.webp'
 import { LazyLoadImage } from 'react-lazy-load-image-component'
 import HeaderSocials from './HeaderSocials'
 import './header.css'
@@ -60,7 +59,7 @@ const Header = () => {
 
                         <LazyLoadImage
                             class="relative grayscale w-full xl:max-w-lg xl:mx-auto 2xl:origin-bottom 2xl:scale-110 pt-24 md:pt-0"
-                            src={ME}
+                            src="https://drive.google.com/uc?export=view&id=1NyEYn8gGXmRCnAjnPDVCkj5bEOPcZ0om"
                             alt=""
                         />
                     </div>

@@ -16,7 +16,7 @@ const Footer = () => {
     ]
     return (
         <footer>
-            <div className="footer__logo">AKIGEN</div>
+            <div className="footer__logo"><a href="#"><img src="https://drive.google.com/uc?export=view&id=1wi2GDuQQbH9jOLQFDAYhKMOUzsN1jjR9" alt="animated logo" /></a></div>
 
             <ul className="permalinks">
                 {Links.map((link) => (

@@ -1,5 +1,4 @@
 import React from 'react'
-import ME from '../../assets/me-about.png'
 import { FaAward } from 'react-icons/fa'
 import { FiUsers } from 'react-icons/fi'
 import { VscFolderLibrary } from 'react-icons/vsc'
@@ -13,7 +12,7 @@ const About = () => {
             <div className="container grid grid-cols-1 gap-20 about__container lg:grid-cols-12">
                 <div className="about__me">
                     <div className="about__me-image">
-                        <img src={ME} alt="About" />
+                        <img src="https://drive.google.com/uc?export=view&id=1Z9-y5e1wJ1v-wFbj413dpIHBSf_WlOLE" alt="About" />
                     </div>
                 </div>
                 <div className="about__content">
