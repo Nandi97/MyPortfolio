@@ -26,7 +26,7 @@ const Nav = () => {
                     >
                         <HiOutlineMenuAlt3
                             name={open ? 'close' : 'menu'}
-                            className="text-lg text-black"
+                            className="text-lg text-white"
                         />
                     </div>
                     <ul
@@ -42,7 +42,7 @@ const Nav = () => {
                                     href={link.link}
                                     onClick={() => setActiveNav('#')}
                                     className={`text-white ${
-                                        activeNav === '/'
+                                        activeNav === '#'
                                             ? 'active:text-[#c7493a]'
                                             : ''
                                     } `}

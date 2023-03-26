@@ -23,6 +23,5 @@
 
 .testimonial {
     background: linear-gradient(145deg, #d54e3e, #b34234);
-box-shadow:  9px 9px 18px #141414,
-             -9px -9px 18px #2e2e2e;
+    box-shadow: 9px 9px 18px #141414, -9px -9px 18px #2e2e2e;
 }

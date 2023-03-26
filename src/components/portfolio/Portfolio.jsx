@@ -9,7 +9,7 @@ const Portfolio = () => {
         const getRepoList = async () => {
             const url = `${GIT_API_URL}/repos?per_page=6`
             try {
-                const response = await fetch(url,gitApiOptions)
+                const response = await fetch(url, gitApiOptions)
                 const data = await response.json()
 
                 setRepoData(data)
