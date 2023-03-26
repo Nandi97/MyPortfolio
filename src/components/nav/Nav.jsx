@@ -42,7 +42,7 @@ const Nav = () => {
                                     href={link.link}
                                     onClick={() => setActiveNav('#')}
                                     className={`text-white ${
-                                        activeNav === '#'
+                                        activeNav === '/'
                                             ? 'active:text-[#c7493a]'
                                             : ''
                                     } `}
