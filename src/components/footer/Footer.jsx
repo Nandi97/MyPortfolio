@@ -3,6 +3,7 @@ import './footer.css'
 import { BsFacebook } from 'react-icons/bs'
 import { AiOutlineInstagram } from 'react-icons/ai'
 import { AiOutlineLinkedin } from 'react-icons/ai'
+import FOOTER_LOGO from '../../assets/logo_animated_gif.gif'
 
 const Footer = () => {
     let Links = [
@@ -16,7 +17,9 @@ const Footer = () => {
     ]
     return (
         <footer>
-            <div className="footer__logo"><img src="https://drive.google.com/uc?export=view&id=1wi2GDuQQbH9jOLQFDAYhKMOUzsN1jjR9" alt="animated logo" /></div>
+            <div className="footer__logo">
+                <img src={FOOTER_LOGO} alt="animated logo" />
+            </div>
 
             <ul className="permalinks">
                 {Links.map((link) => (

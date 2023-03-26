@@ -4,6 +4,7 @@ import './nav.css'
 import { useState } from 'react'
 import { HiOutlineMenuAlt3 } from 'react-icons/hi'
 import { LazyLoadImage } from 'react-lazy-load-image-component'
+import HEADER_LOGO from '../../assets/Transparent_Logo.png'
 
 const Nav = () => {
     let Links = [
@@ -16,13 +17,13 @@ const Nav = () => {
 
     let [open, setOpen] = useState(false)
     const [activeNav, setActiveNav] = useState('#')
-    return ( 
+    return (
         <nav>
             <div className="bg-black/[0.3] justify-between py-4 md:px-10 px-7 items-center md:flex">
                 <div className="">
                     <LazyLoadImage
-                        className='hidden md:flex md:h-10'
-                        src="https://drive.google.com/uc?export=view&id=1Z8asG6ysCiZHBbi5w_AMLm_ydDEQxVvQ"
+                        className="hidden p-0 m-0 md:flex md:w-20"
+                        src={HEADER_LOGO}
                         alt="my logo"
                     />
                 </div>
@@ -42,11 +43,12 @@ const Nav = () => {
                                 ? 'top-20 text-black bg-black/[0.3] -mt-12'
                                 : 'top-[-490px]'
                         }`}
-                    ><LazyLoadImage
-                        className='w-20 mt-5 '
-                        src="https://drive.google.com/uc?export=view&id=1Z8asG6ysCiZHBbi5w_AMLm_ydDEQxVvQ"
-                        alt="my logo"
-                    />
+                    >
+                        <LazyLoadImage
+                            className="w-20 mt-5 md:hidden"
+                            src={HEADER_LOGO}
+                            alt="my logo"
+                        />
                         {Links.map((link) => (
                             <li key={link.name}>
                                 <a
