@@ -1,27 +1,29 @@
 @tailwind base;
 
 @layer base {
-    .container.testimonials__container {
-        @apply w-full pb-16 lg:w-2/5 md:w-3/5;
-    }
-    .client__avatar {
-        @apply w-16 aspect-square overflow-hidden rounded-full mx-auto mb-4 border-[6.4px] border-[#a33327];
-    }
-    .testimonial {
-        @apply text-center p-8 rounded-[20px] select-none;
-    }
-    .client__review {
-        @apply text-white font-light block w-4/5 mx-auto mt-3.5;
-    }
-    .swiper-pagination-clickable .swiper-pagination-bullet {
-        @apply bg-[#c7493a];
-    }
+	.container.testimonials__container {
+		@apply w-full pb-16 lg:w-2/5 md:w-3/5;
+	}
+	.client__avatar {
+		@apply w-16 aspect-square overflow-hidden rounded-full mx-auto mb-4 border-[6.4px] border-[#a33327];
+	}
+	.testimonial {
+		@apply text-center p-8 rounded-[20px] select-none;
+	}
+	.client__review {
+		@apply text-white font-light block w-4/5 mx-auto mt-3.5;
+	}
+	.swiper-pagination-clickable .swiper-pagination-bullet {
+		@apply bg-[#c7493a];
+	}
 }
 
 @tailwind components;
 @tailwind utilities;
 
 .testimonial {
-    background: linear-gradient(145deg, #d54e3e, #b34234);
-    box-shadow: 9px 9px 18px #141414, -9px -9px 18px #2e2e2e;
+	background: linear-gradient(145deg, #d54e3e, #b34234);
+	box-shadow:
+		9px 9px 18px #141414,
+		-9px -9px 18px #2e2e2e;
 }

@@ -1,12 +1,12 @@
 @tailwind base;
 
 @layer base {
-    nav {
-        @apply w-full z-[2] shadow-md fixed backdrop-blur-lg top-0 left-0 gap-3;
-    }
-    ul > li {
-        @apply focus:text-white  hover:text-[#c7493a] transition-all duration-300 bg-transparent p-3 rounded-full flex text-lg hover:underline hover:underline-offset-8 decoration-2;
-    }
+	nav {
+		@apply w-full z-[2] shadow-md fixed backdrop-blur-lg top-0 left-0 gap-3;
+	}
+	ul > li {
+		@apply focus:text-white  hover:text-[#c7493a] transition-all duration-300 bg-transparent p-3 rounded-full flex text-lg hover:underline hover:underline-offset-8 decoration-2;
+	}
 }
 
 @tailwind components;

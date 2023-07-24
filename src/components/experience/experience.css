@@ -1,31 +1,31 @@
 @tailwind base;
 
 @layer base {
-    .experience__container {
-        @apply container grid grid-cols-1 gap-8 lg:grid-cols-2;
-    }
-    .experience__frontend {
-        @apply rounded-3xl hover:bg-transparent hover:text-black hover:border-[#C7493A] hover:cursor-default px-4 md:px-20 py-10 transition duration-300 ease-in-out border border-transparent bg-black bg-opacity-20 backdrop-blur-lg drop-shadow-lg;
-    }
+	.experience__container {
+		@apply container grid grid-cols-1 gap-8 lg:grid-cols-2;
+	}
+	.experience__frontend {
+		@apply rounded-3xl hover:bg-transparent hover:text-black hover:border-[#C7493A] hover:cursor-default px-4 md:px-20 py-10 transition duration-300 ease-in-out border border-transparent bg-black bg-opacity-20 backdrop-blur-lg drop-shadow-lg;
+	}
 
-    .experience__backend {
-        @apply rounded-3xl hover:bg-transparent hover:text-black hover:border-[#C7493A] hover:cursor-default px-4 md:px-20 py-10 transition duration-300 ease-in-out border border-transparent bg-black bg-opacity-20 backdrop-blur-lg drop-shadow-lg;
-    }
+	.experience__backend {
+		@apply rounded-3xl hover:bg-transparent hover:text-black hover:border-[#C7493A] hover:cursor-default px-4 md:px-20 py-10 transition duration-300 ease-in-out border border-transparent bg-black bg-opacity-20 backdrop-blur-lg drop-shadow-lg;
+	}
 
-    h3 {
-        @apply mb-16 text-xl text-center text-white;
-    }
+	h3 {
+		@apply mb-16 text-xl text-center text-white;
+	}
 
-    .experience__content {
-        @apply grid grid-cols-1 gap-4 md:gap-8 md:grid-cols-2;
-    }
+	.experience__content {
+		@apply grid grid-cols-1 gap-4 md:gap-8 md:grid-cols-2;
+	}
 
-    h4 {
-        @apply text-black text-base;
-    }
-    article > small {
-        @apply text-xs text-black;
-    }
+	h4 {
+		@apply text-black text-base;
+	}
+	article > small {
+		@apply text-xs text-black;
+	}
 }
 
 @tailwind components;

@@ -1,31 +1,35 @@
 @tailwind base;
 
 @layer base {
-    .portfolio__container {
-        @apply container grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3 md:gap-5 lg:gap-10;
-    }
+	.portfolio__container {
+		@apply container grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3 md:gap-5 lg:gap-10;
+	}
 
-    .portfolio__item {
-        @apply p-4 bg-[#fff] bg-opacity-70 backdrop-blur-lg  drop-shadow-lg rounded-[20px] border border-transparent transition duration-500 flex flex-col items-center w-full;
-    }
-    /* .portfolio__item-image {
+	.portfolio__item {
+		@apply p-4 bg-[#fff] bg-opacity-70 backdrop-blur-lg  drop-shadow-lg rounded-[20px] border border-transparent transition duration-500 flex flex-col items-center w-full;
+	}
+	/* .portfolio__item-image {
         @apply overflow-hidden rounded-3xl;
     } */
-    .portfolio__item h3 {
-        @apply mt-5 mb-8 text-left text-[#C7493A];
-    }
-    .portfolio__item-cta {
-        @apply flex gap-4 mb-4;
-    }
+	.portfolio__item h3 {
+		@apply mt-5 mb-8 text-left text-[#C7493A];
+	}
+	.portfolio__item-cta {
+		@apply flex gap-4 mb-4;
+	}
 }
 
 @tailwind components;
 @tailwind utilities;
 
 .portfolio__item {
-    box-shadow: 20px 20px 40px #999999, -20px -20px 40px #ffffff;
+	box-shadow:
+		20px 20px 40px #999999,
+		-20px -20px 40px #ffffff;
 }
 .portfolio__item:hover {
-    background: linear-gradient(145deg, #e6e6e6, #ffffff);
-    box-shadow: 20px 20px 40px #999999, -20px -20px 40px #ffffff;
+	background: linear-gradient(145deg, #e6e6e6, #ffffff);
+	box-shadow:
+		20px 20px 40px #999999,
+		-20px -20px 40px #ffffff;
 }

@@ -1,27 +1,27 @@
 @tailwind base;
 
 @layer base {
-    footer {
-        @apply px-12 mt-10 text-sm text-center md:mt-20;
-    }
-    .footer__logo {
-        @apply inline-block w-20 h-20 mb-4 text-4xl;
-    }
-    footer a {
-        @apply text-sm;
-    }
-    .permalinks {
-        @apply flex flex-wrap justify-center m-auto mb-4 md:gap-8 md:mb-12;
-    }
-    .footer__socials {
-        @apply flex justify-center gap-4 mb-6 md:mb-16;
-    }
-    .footer__socials a {
-        @apply p-2 bg-white rounded-xl text-lg flex border border-transparent border-[#C7493A] hover:bg-[#C7493A99] transition duration-300 bg-opacity-20 backdrop-blur-lg drop-shadow-lg;
-    }
-    .footer__copyright {
-        @apply mb-6 md:mb-16;
-    }
+	footer {
+		@apply px-12 mt-10 text-sm text-center md:mt-20;
+	}
+	.footer__logo {
+		@apply inline-block w-20 h-20 mb-4 text-4xl;
+	}
+	footer a {
+		@apply text-sm;
+	}
+	.permalinks {
+		@apply flex flex-wrap justify-center m-auto mb-4 md:gap-8 md:mb-12;
+	}
+	.footer__socials {
+		@apply flex justify-center gap-4 mb-6 md:mb-16;
+	}
+	.footer__socials a {
+		@apply p-2 bg-white rounded-xl text-lg flex border border-transparent border-[#C7493A] hover:bg-[#C7493A99] transition duration-300 bg-opacity-20 backdrop-blur-lg drop-shadow-lg;
+	}
+	.footer__copyright {
+		@apply mb-6 md:mb-16;
+	}
 }
 
 @tailwind components;
